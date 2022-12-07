@@ -9,45 +9,45 @@ namespace StackUsingLinkedList_CSharp
     class Stacks
     {
         static readonly int MAX = 190;
-        int top;
+        int nnn;
         int[] stack = new int[MAX];
         public Stacks()
         {
-            top = -1;
+            nnn = -1;
         }
         bool empty()
         {
-            return (top < 0);
+            return (nnn < 0);
         }
         public void push(int element)
         {
-            if (top >= MAX)
+            if (nnn >= MAX)
             {
                 Console.WriteLine("Stack Overflow");
                 return;
             }
             else
             {
-                stack[++top] = element;
+                stack[++nnn] = element;
                 return;
             }
         }
         public void pop()
         {
-            if (top < 0)
+            if (nnn < 0)
             {
                 Console.WriteLine("Stack Underflow");
                 return;
             }
             else
             {
-                Console.WriteLine("\nThe popped element is: " + stack[top--]);
+                Console.WriteLine("\nThe popped element is: " + stack[nnn--]);
                 return;
             }
         }
         public void display()
         {
-            if (top < 0)
+            if (nnn < 0)
             {
                 Console.WriteLine("Stack Underflow");
                 return;
@@ -55,7 +55,7 @@ namespace StackUsingLinkedList_CSharp
             else
             {
                 Console.WriteLine("Items in the Stack are :");
-                for (int i = top; i >= 0; i--)
+                for (int i = nnn; i >= 0; i--)
                 {
                     Console.WriteLine(stack[i]);
                 }
