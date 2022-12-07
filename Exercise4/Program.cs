@@ -41,7 +41,7 @@ namespace StackUsingLinkedList_CSharp
             }
             else
             {
-                Console.WriteLine("Element Delete: " + stack[top--]);
+                Console.WriteLine("\nThe popped element is: " + stack[top--]);
                 return;
             }
         }
@@ -61,6 +61,7 @@ namespace StackUsingLinkedList_CSharp
                 }
             }
         }
+
     }
 }
 
