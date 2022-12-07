@@ -19,6 +19,19 @@ namespace StackUsingLinkedList_CSharp
         {
             return (top < 0);
         }
+        public void push(int element)
+        {
+            if (top >= MAX)
+            {
+                Console.WriteLine("Stack Overflow");
+                return;
+            }
+            else
+            {
+                stack[++top] = element;
+                return;
+            }
+        }
     }
 }
 
