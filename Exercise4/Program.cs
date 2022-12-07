@@ -15,7 +15,10 @@ namespace StackUsingLinkedList_CSharp
         {
             top = 1;
         }
-
+        bool empty()
+        {
+            return (top < 0);
+        }
     }
 }
 
