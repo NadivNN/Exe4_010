@@ -4,12 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exercise4
+namespace StackUsingLinkedList_CSharp
 {
-    internal class Program
+    class Stacks
     {
-        static void Main(string[] args)
+        static readonly int MAX = 190;
+        int top;
+        int[] stack = new int[MAX];
+        public Stacks()
         {
+            top = -1;
         }
     }
 }
+
+
+
+
