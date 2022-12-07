@@ -32,6 +32,19 @@ namespace StackUsingLinkedList_CSharp
                 return;
             }
         }
+        public void pop()
+        {
+            if (top < 0)
+            {
+                Console.WriteLine("Stack Underflow");
+                return;
+            }
+            else
+            {
+                Console.WriteLine("Element Delete: " + stack[top--]);
+                return;
+            }
+        }
     }
 }
 
