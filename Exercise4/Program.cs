@@ -13,8 +13,9 @@ namespace StackUsingLinkedList_CSharp
         int[] stack = new int[MAX];
         public Stacks()
         {
-            top = -1;
+            top = 1;
         }
+
     }
 }
 
